@@ -10,4 +10,9 @@ public class mandarinControllers {
 	public String index(Model model) {
 		return "index";
 	}
+	
+	@GetMapping({"/plantilla","/ptl"})
+	public String plantilla(Model model) {
+		return "plantilla";
+	}
 }
