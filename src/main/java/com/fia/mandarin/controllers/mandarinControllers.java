@@ -15,4 +15,14 @@ public class mandarinControllers {
 	public String plantilla(Model model) {
 		return "plantilla";
 	}
+	
+	@GetMapping({"/registrar","/registrarUsuario"})
+	public String registrar(Model model) {
+		return "registrar";
+	}
+	
+	@GetMapping({"/ingresar","/iniciarsesion"})
+	public String ingresar(Model model) {
+		return "ingresar";
+	}
 }
