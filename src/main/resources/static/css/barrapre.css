@@ -1,0 +1,24 @@
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+body{ background-color:#333;}
+input[type=range]{
+  width:20em;
+  height:.5em;
+  display:block;
+  margin:5em auto;
+  -webkit-appearance: none;/*en los navegadores de tipo -webkit- anula los estilos con los cuales los sliders vienen de fabrica.*/
+  background-image:linear-gradient(to right, HotPink calc(var(--value)*1%), black 0);
+}
+
+
+
+
+
+
+
+input[type=range]:focus{outline:none;}
+p{margin:2em 0; text-align:center;}
+input[type=range]::-moz-range-track {background-color:transparent}
+
+
+

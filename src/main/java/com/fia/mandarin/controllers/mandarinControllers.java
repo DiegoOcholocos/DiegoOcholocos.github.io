@@ -16,13 +16,22 @@ public class mandarinControllers {
 		return "plantilla";
 	}
 	
-	@GetMapping({"/registrar","/registrarUsuario"})
+	@GetMapping({"/regi","/registrar","/registrarUsuario"})
 	public String registrar(Model model) {
 		return "registrar";
 	}
 	
-	@GetMapping({"/ingresar","/iniciarsesion"})
+	@GetMapping({"/login","/ingresar","/iniciarsesion"})
 	public String ingresar(Model model) {
 		return "ingresar";
 	}
+	@GetMapping({"/promo","/promociones","/pr0"})
+	public String promociones(Model model) {
+		return "promociones";
+	}
+	@GetMapping({"/carrito","/car","/c1"})
+	public String listar(Model model) {
+		return "listar";
+	}
 }
+

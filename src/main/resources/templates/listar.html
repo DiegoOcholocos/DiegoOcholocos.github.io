@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/baae21275a.js" crossorigin="anonymous"></script>
     <!--AUMENTAR PERO NO BORRAR -->
     <!--NO TOCAR NO TOCAR NO TOCAR -->
-    <!-- llamado de chat bot -->
+        <!-- llamado de chat bot -->
     
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
@@ -48,7 +48,7 @@
 <body id="scroll">
 <nav class="nav">
 <!--NO TOCAR NO TOCAR NO TOCAR -->
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <div class="logo animated bounceInLeft">
                 <a href="index">MANDARIN express</a>
             </div>
@@ -88,35 +88,27 @@
 	<br>
 	<div class="m-0 vh-100 row justify-content-center aling-items-center wow rollIn center">
 	<div class="col-auto p-6 text-center">
+	
 	<div style="background-color: rgba(81, 81, 81, 0.54);border-radius: 15px">
-	<form class="registrar">
-	 <h1>Crear cuenta</h1>
-	 <div class="container">
-	 <p class="t">Apellidos</p>
-	 <div class="input-container">
-	 <i class="fas fa-user icon"></i>
-	 <input  style="width: 500px" class="controll" type="text" placeholder="Apellidos">
-	 </div>
-	 <p class="t">Nombres</p>
-	 <div class="input-container">
-	 <i class="fas fa-user icon"></i>
-	 <input  style="width: 500px" class="controll" type="text" placeholder="Nombres">
-	 </div>
-	 <p class="t">Correo electronico</p>
-	 <div class="input-container">
-	 <i class="far fa-envelope icon"></i>
-	 <input  style="width: 500px" class="controll" type="text" placeholder="Correo electronico">
-	 </div>
-	 <p class="t">Contraseña</p>
-	 <div class="input-container">
-	 <i class="fas fa-key icon"></i>
-	 <input  style="width: 500px" class="controll" type="password" placeholder="Contraseña">
-	 </div>
-	 <input  style="width: 500px" type="submit" value="Registrarse" class="button wow pulse " data-wow-iteration="infinite" data-wow-duration="2s">
-	 <p>Al registrarse, aceptas nuestras Condiciones de uso y Politica de privacidad.</p>
-	 <p>¿Ya tienes una cuenta?<a class="link" href="ingresar">Iniciar Sesion</a></p>
-	 </div>	
-	 </form>
+	<table class="table">
+		<thead>
+			<tr>
+
+				<th>Apellido</th>
+				<th>Nombre</th>
+				<th>Usuario</th>
+				<th>Password</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="usuario: ${usuarios}">
+				<td th:text="${usuario.ape}"></td>
+				<td th:text="${usuario.nom}"></td>
+				<td th:text="${usuario.usu}"></td>
+				<td th:text="${usuario.pass}"></td>
+			</tr>
+		</tbody>
+	</table>
 	</div>
 	</div>
 	</div>
@@ -188,11 +180,12 @@
       	<div class="input-group mb-3 wow bounceInUp">
   			<input style="font-size: 35px" class="form-control" placeholder="tuCorreo@correo.com" aria-label="Recipient's username" aria-describedby="button-addon2">
   				<div style="padding: 0px 0px 0px 15px;">
-  					<button style="font-size: 35px;" class="btn btn-outline-secondary wow pulse " data-wow-iteration="infinite" type="button" id="button-addon2">SUSCRIBIRSE</button>
+  					<button style="font-size: 35px;" class="wow pulse btn btn-outline-secondary " data-wow-iteration="infinite" type="button" id="button-addon2">SUSCRIBIRSE</button>
   				</div>
   				
 		</div>
 		<hr style="border-top: 1px solid white;">
+		<h4 style="color: white;">Mandarinexpress.pe © 2021</h4>
 		<h4 style="color: white;">Mandarinexpress.pe © 2021</h4>
 		<h5 style="color: white;" class="wow bounceInRight" >Diego Ochochoque Made {Navbar, Index, Footer}</h5>
 		<h5 style="color: white;" class="wow bounceInLeft" >Franco Delgado Made {Ingresar, Registrar}</h5>
