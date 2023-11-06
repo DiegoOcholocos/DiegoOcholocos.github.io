@@ -1,282 +1,298 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="utf-8">
+    <!DOCTYPE html>
+    <html lang="es" >
+    <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VF Consulting</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="css/navvar.css" rel="stylesheet">
-    <link href="css/tamañoLetra.css" rel="stylesheet">
-    <script src="js/navvar.js"></script>
-    
-    <script>
-      new WOW().init();
-    </script>
-  </head>
-  <nav class="nav">
-    <div class="my-container">
-      <div class="containernavvar">
-        <div class="logo">
-            <a href="#">Your Logo</a>
-        </div>
-        <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
+    <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script>
+            $(document).ready(function () {
+            new WOW().init();
+            });
+        </script>
+    </head>
+    <body style="background-color: rgb(226, 226, 226);">
+    <!-- partial:index.partial.html -->
+    <div class="vf-customnav">
+        <nav class="vf-nav" style="z-index: 100;">
+            <div class="vf-container">
+                <div class="vf-logo">
+                    <a class=" animate__animated animate__bounceInRight" data-wow-duration="1s" href="#" style="font-size: 25px;">VF Consulting</a>
+                </div>
+                <div id="vf-mainListDiv" class="vf-main_list  animate__animated animate__bounceInDown" data-wow-duration="1s">
+                    <ul class="vf-navlinks">
+                        <li><a href="#" style="font-size: 25px;">Nosotros</a></li>
+                        <li><a href="#" style="font-size: 25px;">Servicios</a></li>
+                        <li><a href="#" style="font-size: 25px;">Socios</a></li>
+                        <li><a href="#" style="font-size: 25px;">Proyectos</a></li>
+                        <li><a href="#" style="font-size: 25px;">Contactenos</a></li>
+                    </ul>
+                </div>
+                <span class="vf-navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
     </div>
+    <div class="vf-home" style="background-image: url(img/slide1.png);">
+        <div style="padding-top: 50vh">
+            <h1 class="vf-heading wow animate__animated animate__bounceInUp" data-wow-duration="2s" style="z-index: 10">Pongase en Contacto con Nosotros</h1>
+            <p><button class="vf-btn btn-primary wow animate__animated animate__bounceInUp" data-wow-duration="3s" style="z-index: 10">Click Aqui</button></p>
+        </div>
     </div>
-</nav>
-  
-  <body style="background-color: #e7e7e7;">
-
-    <section class="home" style="background-image: url('img/slide1.png');"></section>
-
     <br>
     <br>
-
-    <div >
-      <div id="carouselExampleCaptions" class="container carousel slide">
+    <br>
+    <div class="wow animate__animated animate__bounceInUp" data-wow-duration="1s">
+        <div id="carouselExampleCaptions" class="container carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+            <div class="carousel-item active">
             <img src="img/slide1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block backgroundCard">
-              <h1>First slide label</h1>
-              <h2>Some representative placeholder content for the first slide.</h2>
+                <h1>First slide label</h1>
+                <h2>Some representative placeholder content for the first slide.</h2>
             </div>
-          </div>
-          <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
             <img src="img/slide1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block backgroundCard">
-              <h1>Second slide label</h1>
-              <h2>Some representative placeholder content for the second slide.</h2>
+                <h1>Second slide label</h1>
+                <h2>Some representative placeholder content for the second slide.</h2>
             </div>
-          </div>
-          <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
             <img src="img/slide1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block backgroundCard">
-              <h1>Third slide label</h1>
-              <h2>Some representative placeholder content for the third slide.</h2>
+                <h1>Third slide label</h1>
+                <h2>Some representative placeholder content for the third slide.</h2>
             </div>
-          </div>
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">VF Consulting SAC</h5>
-              <p class="card-text">Somos una empresa al servicio de la industria de telecomunicaciones.</p>
-              <a  href="">Ver más información</a>
-            </div>
-          </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nuestra Experiencia:</h5>
-                  <a style="color: red", "font-weight: bold;">></a>  <a href="">Proyectos de Telecomunicaciones</a>
-                  <br>
-                  <a style="color: red", "font-weight: bold;">></a>  <a href="">BSCS (Rating, Billing, NRTRDE, Roaming)</a>
-                  <br>
-                  <a style="color: red", "font-weight: bold;">></a>  <a href="">Provisioning</a>
-                  <br>
-                  <a style="color: red", "font-weight: bold;">></a>  <a href="">Revenue Assurance</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide1.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Nuestra Propuesta</h5>
-              <p class="card-text">Contamos con la experiencia necesaria para ayudarlo en las diferentes fases de los proyectos participando como: Integradores, ejecutores y soporte en las pruebas</p>
-              <a  href=""> &gt; Ver más información</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <br>
     <br>
     <br>
     <br>
-    <div class="container">
-      <div class="row">
-        <div class="container text-left">
-          <div class="row">
-            <div class="col-6">
-              <h3>¿Por qué elegir a VF Consulting?</h3>
-              <p> <a style="color: red", "font-weight: bold;">></a>   una amplia experiencia en las operaciones de empresas de telecomunicaciones.</p>
-              <br>
-              <p> <a style="color: red", "font-weight: bold;">></a>  Nuestros expertos conocen los sistemas CORE de su compañía.</p>
-              <br>
-              <p> <a style="color: red", "font-weight: bold;">></a>  Seguimos recomendaciones ITIL en los servicios de soporte y metodologías ágiles (Lean / Kanban) para el desarrollo de proyectos, así como la metodología PMI para la gestión de proyectos.</p>
-              <br>
-              <p> <a style="color: red", "font-weight: bold;">></a>  Nuestra preocupación es la satisfacción y confianza de nuestros clientes a largo plazo.</p>
-              <br>
-            </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="col-12">
-                  <h3>Nosotros somos VF Consulting SAC</h3>
-                  <br>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-4">
-                  <img src="img/slide1.png" class="img-fluid">  
-                </div>
-                <div class="col-6">
-                  <p>El cambio se está generando en cada individuo, familia, sociedad y a nivel empresarial; por lo que es necesario contar con un socio de negocio estratégico para la consecución de dicho cambio de los objetivos y del crecimiento esperado.</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <br>
-            <br>
-      </div>
-    </div>
-  </div>
-   
+        <br>
+        <br>
+        <br>
 
-  </body>
-
-  <footer class="custom-footer" style="background-color: white;">
-    <br>
-    <br>
-    <br>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <h3>Síguenos en:</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <img src="img/slide1.png" alt="Facebook" class="img-fluid">
-            </div>
-            <div class="col-md-4">
-              <img src="img/slide1.png" alt="Twitter" class="img-fluid">
-            </div>
-            <div class="col-md-4">
-              <img src="img/slide1.png" alt="Instagram" class="img-fluid">
-            </div>
-          </div>
-          <!-- Redes sociales o enlaces de seguimiento -->
-        </div>
-        <div class="col-md-3">
-          <h3>Nuestra Asesoría</h3>
-          <p>Una buena elección y asesoramiento sobre los sistemas y herramientas informáticas que han de dar soporte a una organización es esencial para que ésta se mantenga en constante rendimiento.</p>
-          <a href="#">Leer más</a>
-        </div>
-
-
-        <div class="col-md-3">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>Nuestros Clientes</h3>
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
+        <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col wow animate__animated animate__bounceInLeft" data-wow-duration="1s">
+            <div class="card h-100">
+                <img src="img/slide1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">VF Consulting SAC</h5>
+                <p class="card-text">Somos una empresa al servicio de la industria de telecomunicaciones.</p>
+                <a  href="">Ver más información</a>
                 </div>
-              </div>
             </div>
-            <div class="coxl-md-12">
-              <h3>Nuestro Socio Estratégico</h3>
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
-                  </div>
+            </div>
+            <div class="col wow animate__animated animate__bounceInUp" data-wow-duration="1s">
+            <div class="card h-100">
+                <img src="img/slide1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Nuestra Experiencia:</h5>
+                    <a style="color: red", "font-weight: bold;">></a>  <a href="">Proyectos de Telecomunicaciones</a>
+                    <br>
+                    <a style="color: red", "font-weight: bold;">></a>  <a href="">BSCS (Rating, Billing, NRTRDE, Roaming)</a>
+                    <br>
+                    <a style="color: red", "font-weight: bold;">></a>  <a href="">Provisioning</a>
+                    <br>
+                    <a style="color: red", "font-weight: bold;">></a>  <a href="">Revenue Assurance</a>
+
                 </div>
-              </div>
-              <!-- Lista de clientes -->
             </div>
-          </div>
+            </div>
+            <div class="col wow animate__animated animate__bounceInRight" data-wow-duration="1s">
+            <div class="card h-100">
+                <img src="img/slide1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Nuestra Propuesta</h5>
+                <p class="card-text">Contamos con la experiencia necesaria para ayudarlo en las diferentes fases de los proyectos participando como: Integradores, ejecutores y soporte en las pruebas</p>
+                <a  href=""> &gt; Ver más información</a>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="col-md-3">
-          <h3>Ubicación</h3>
-          <p>Calle General Varela No 356 of. 601<br>Miraflores. Lima - Peru.</p>
-          <p>Teléfono: (+51-1) 711-8371</p>
-          <p>Email: customer_support@vfcons.com</p>
-          <a href="http://www.vfcons.com">www.vfcons.com</a>
         </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div style="background-color: #000000;">
-      <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
         <div class="row">
-          <br>
-          <p style="color: #ffffff">© 2023 VF CONSULTING Todos los derechos reservados</p>
-          <br>
+            <div class="container text-left">
+            <div class="row">
+                <div class="col-6 wow animate__animated animate__bounceInLeft" data-wow-duration="1s">
+                <h3>¿Por qué elegir a VF Consulting?</h3>
+                <p> <a style="color: red", "font-weight: bold;">></a>   una amplia experiencia en las operaciones de empresas de telecomunicaciones.</p>
+                
+                <p> <a style="color: red", "font-weight: bold;">></a>  Nuestros expertos conocen los sistemas CORE de su compañía.</p>
+                
+                <p> <a style="color: red", "font-weight: bold;">></a>  Seguimos recomendaciones ITIL en los servicios de soporte y metodologías ágiles (Lean / Kanban) para el desarrollo de proyectos, así como la metodología PMI para la gestión de proyectos.</p>
+                
+                <p> <a style="color: red", "font-weight: bold;">></a>  Nuestra preocupación es la satisfacción y confianza de nuestros clientes a largo plazo.</p>
+                
+                </div>
+                <div class="col-6 wow animate__animated animate__bounceInRight" data-wow-duration="1s">
+                <div class="row">
+                    <div class="col-12">
+                    <h3>Nosotros somos VF Consulting SAC</h3>
+                    <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                    <img src="img/slide1.png" class="img-fluid">  
+                    </div>
+                    <div class="col-6">
+                    <p>El cambio se está generando en cada individuo, familia, sociedad y a nivel empresarial; por lo que es necesario contar con un socio de negocio estratégico para la consecución de dicho cambio de los objetivos y del crecimiento esperado.</p>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <br>
+                <br>
         </div>
-      </div>
+        </div>
     </div>
-  </footer>
+    
+
+    </body>
+
+    <footer class="custom-footer" style="background-color: white;">
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 wow animate__animated animate__bounceInUp" data-wow-duration="1s">
+            <h3>Síguenos en:</h3>
+            <div class="row">
+                <div class="col-md-4">
+                <img src="img/slide1.png" alt="Facebook" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                <img src="img/slide1.png" alt="Twitter" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                <img src="img/slide1.png" alt="Instagram" class="img-fluid">
+                </div>
+            </div>
+            <!-- Redes sociales o enlaces de seguimiento -->
+            </div>
+            <div class="col-md-3 wow animate__animated animate__bounceInUp" data-wow-duration="2s">
+            <h3>Nuestra Asesoría</h3>
+            <p>Una buena elección y asesoramiento sobre los sistemas y herramientas informáticas que han de dar soporte a una organización es esencial para que ésta se mantenga en constante rendimiento.</p>
+            <a href="#">Leer más</a>
+            </div>
+
+
+            <div class="col-md-3 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <div class="row">
+                <div class="col-md-12">
+                <h3>Nuestros Clientes</h3>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="coxl-md-12">
+                <h3>Nuestro Socio Estratégico</h3>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slide1.png" class="d-block w-100" alt="..." height="60">
+                    </div>
+                    </div>
+                </div>
+                <!-- Lista de clientes -->
+                </div>
+            </div>
+            </div>
+            <div class="col-md-3 wow animate__animated animate__bounceInUp" data-wow-duration="4s">
+            <h3>Ubicación</h3>
+            <p>Calle General Varela No 356 of. 601<br>Miraflores. Lima - Peru.</p>
+            <p>Teléfono: (+51-1) 711-8371</p>
+            <p>Email: customer_support@vfcons.com</p>
+            <a href="http://www.vfcons.com">www.vfcons.com</a>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="background-color: #000000;">
+        <div class="container">
+            <div class="row">
+            <br>
+            <br>    
+            <p style="color: #ffffff; margin-top: 20px;" class="wow animate__animated animate__bounceInRight" data-wow-duration="2s">© 2023 VF CONSULTING Todos los derechos reservados</p>
+            <br>
+            </div>
+        </div>
+        </div>
+    </footer>
 
 
 
-    <!-- Scripts -->
-    <!-- Function used to shrink nav bar removing paddings and adding a black background -->
+
+
+
+
+
+
+
+
     <script>
-      $(window).scroll(function() {
-          if ($(document).scrollTop() > 50) {
-              $('.nav').addClass('affix');
-              console.log("OK");
-          } else {
-              $('.nav').removeClass('affix');
-          }
-      });
-  </script>
-  </html>
+
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.vf-nav').addClass('vf-affix');
+                    console.log("OK");
+                } else {
+                    $('.vf-nav').removeClass('vf-affix');
+                }
+            });
+    </script>
+    </body>
+    </html>
